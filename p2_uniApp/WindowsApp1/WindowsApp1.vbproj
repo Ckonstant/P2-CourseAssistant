@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9F55779-4547-4B79-9657-219600E560D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApp1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApp1</RootNamespace>
+    <AssemblyName>WindowsApp1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_unisinos_universitya.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Desktop\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Syncfusion.BulletGraph.Windows, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Chart.Base, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Chart.Windows, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Core.WinForms, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Data.WinForms, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Diagram.Base, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Diagram.Windows, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Gauge.Windows, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Grouping.Windows, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.GridCommon.WinForms, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grouping.Base, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Linq.Base, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Maps.Windows, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Pdf.Base, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.PdfViewer.Windows, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.PivotAnalysis.Base, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.PivotAnalysis.Windows, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Schedule.Base, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Schedule.Windows, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.SfDataGrid.WinForms, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.SfInput.WinForms, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.SfListView.WinForms, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Base, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Windows, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="agaphmena.Designer.vb">
+      <DependentUpon>agaphmena.vb</DependentUpon>
+    </Compile>
+    <Compile Include="agaphmena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alertForm.Designer.vb">
+      <DependentUpon>alertForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="alertForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="appointEve.Designer.vb">
+      <DependentUpon>appointEve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="appointEve.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apps.Designer.vb">
+      <DependentUpon>apps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="apps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appsControl.Designer.vb">
+      <DependentUpon>appsControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="appsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="calendar.Designer.vb">
+      <DependentUpon>calendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="calendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="courseControl.Designer.vb">
+      <DependentUpon>courseControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="courseControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="courseFileData.Designer.vb">
+      <DependentUpon>courseFileData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="courseFileData.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="courseFiles.Designer.vb">
+      <DependentUpon>courseFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="courseFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="courseMain.Designer.vb">
+      <DependentUpon>courseMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="courseMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="downloadMenu.Designer.vb">
+      <DependentUpon>downloadMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="downloadMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General.Designer.vb">
+      <DependentUpon>General.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="labs.Designer.vb">
+      <DependentUpon>labs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="labs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="links.Designer.vb">
+      <DependentUpon>links.vb</DependentUpon>
+    </Compile>
+    <Compile Include="links.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.vb">
+      <DependentUpon>loginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="miniMenu.Designer.vb">
+      <DependentUpon>miniMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="miniMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="myFiles.Designer.vb">
+      <DependentUpon>myFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="myFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newsFeed.Designer.vb">
+      <DependentUpon>newsFeed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newsFeed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelEx.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="pdfViewer.Designer.vb">
+      <DependentUpon>pdfViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pdfViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setts.Designer.vb">
+      <DependentUpon>setts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpleScheduleDataProvider.vb" />
+    <Compile Include="UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="weekMenu.Designer.vb">
+      <DependentUpon>weekMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="weekMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="agaphmena.resx">
+      <DependentUpon>agaphmena.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alertForm.resx">
+      <DependentUpon>alertForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appointEve.resx">
+      <DependentUpon>appointEve.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apps.resx">
+      <DependentUpon>apps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appsControl.resx">
+      <DependentUpon>appsControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calendar.resx">
+      <DependentUpon>calendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="courseControl.resx">
+      <DependentUpon>courseControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="courseFileData.resx">
+      <DependentUpon>courseFileData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="courseFiles.resx">
+      <DependentUpon>courseFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="courseMain.resx">
+      <DependentUpon>courseMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="downloadMenu.resx">
+      <DependentUpon>downloadMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General.resx">
+      <DependentUpon>General.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="labs.resx">
+      <DependentUpon>labs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="links.resx">
+      <DependentUpon>links.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="miniMenu.resx">
+      <DependentUpon>miniMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myFiles.resx">
+      <DependentUpon>myFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newsFeed.resx">
+      <DependentUpon>newsFeed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pdfViewer.resx">
+      <DependentUpon>pdfViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setts.resx">
+      <DependentUpon>setts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="weekMenu.resx">
+      <DependentUpon>weekMenu.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\expand_arrow_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more_than_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_unisinos_universitya.ico" />
+    <Content Include="Resources\Checkmark_28px.png" />
+    <Content Include="Resources\Error_28px.png" />
+    <Content Include="Resources\Info_28px.png" />
+    <Content Include="Resources\Multiply_18px.png" />
+    <Content Include="Resources\Warning_28px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
