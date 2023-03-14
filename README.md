@@ -18,7 +18,8 @@ https://user-images.githubusercontent.com/125656019/225110705-880cc34d-b58d-49bc
 ## Getting Started
 
 ### Dependencies
-
+* Guna.UI
+* Syncfusion WPF Forms
 * .NET Framework
 * Adobe Reader
 * Windows 8+ (preferabbly Windows 10)
