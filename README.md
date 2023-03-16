@@ -27,7 +27,7 @@ https://user-images.githubusercontent.com/125656019/225110705-880cc34d-b58d-49bc
 
 ### Installing
 
-* You can get all the project files from this link. [www.chriskon.com\portfolio-1]
+* You can get all the project files from this link. [Download](https://chriskon.com/portfolio-1/)
 * Install info can be found on link below.
 * https://chriskon.com/portfolio-1/
 
