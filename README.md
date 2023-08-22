@@ -1,4 +1,4 @@
-# University Course Application
+# Course Assistant Application
 
 Advanced application for students to prepare for exams and keep track of their courses.
 
